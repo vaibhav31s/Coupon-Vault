@@ -11,7 +11,6 @@ export default function Register() {
   const [message, setMessage] = useState("");
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(email, password, phone);
     // const res = await fetch("/api/register", {
     //     method: "POST",
     //     headers: {
