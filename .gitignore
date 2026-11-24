@@ -46,5 +46,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-yarn.lock
-package-lock.json
+
+# env files (may contain secrets)
+.env
+.env*
+!.env.example
