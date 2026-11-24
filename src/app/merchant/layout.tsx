@@ -119,7 +119,7 @@ export default function Layout({ children }) {
         
       </div>
       
-      <div className="w-[100%] overflow-y-scroll pt-2">
+      <div className="w-full overflow-y-scroll pt-2">
       <div className="dark:text-white">Path : {path.toString()}</div>
       {children}
     

@@ -29,7 +29,7 @@ const Sidebar = () => {
                     <div
                         className={
                             `${selected}` === "dashboard"
-                                ? "border-l-4 rounded-sm border-sky-200"
+                                ? "border-l-4 rounded-xs border-sky-200"
                                 : ""
                         }
                         onClick={() => {
@@ -50,7 +50,7 @@ const Sidebar = () => {
                     <div
                         className={
                             `${selected}` === "staff"
-                                ? "border-l-4 rounded-sm border-sky-200"
+                                ? "border-l-4 rounded-xs border-sky-200"
                                 : ""
                         }
                         onClick={() => {
@@ -71,7 +71,7 @@ const Sidebar = () => {
                     <div
                         className={
                             `${selected}` === "menu"
-                                ? "border-l-4 rounded-sm border-sky-200"
+                                ? "border-l-4 rounded-xs border-sky-200"
                                 : ""
                         }
                         onClick={() => {
@@ -92,7 +92,7 @@ const Sidebar = () => {
                     <div
                         className={
                             `${selected}` === "restaurant"
-                                ? "border-l-4 rounded-sm border-sky-200"
+                                ? "border-l-4 rounded-xs border-sky-200"
                                 : ""
                         }
                         onClick={() => {
@@ -113,7 +113,7 @@ const Sidebar = () => {
                     <div
                         className={
                             `${selected}` === "user-details"
-                                ? "border-l-4 rounded-sm border-sky-200"
+                                ? "border-l-4 rounded-xs border-sky-200"
                                 : ""
                         }
                         onClick={() => {
@@ -140,7 +140,7 @@ const Sidebar = () => {
                     <div
                         className={
                             `${selected}` === "profile"
-                                ? "border-l-4 rounded-sm border-sky-200"
+                                ? "border-l-4 rounded-xs border-sky-200"
                                 : ""
                         }
                         onClick={() => {
@@ -160,7 +160,7 @@ const Sidebar = () => {
                     <div
                         className={
                             `${selected}` === "settings"
-                                ? "border-l-4 rounded-sm border-sky-200"
+                                ? "border-l-4 rounded-xs border-sky-200"
                                 : ""
                         }
                         onClick={() => {
@@ -184,7 +184,7 @@ const Sidebar = () => {
                     <div
                         className={
                             `${selected}` === "logout"
-                                ? "border-l-4 rounded-sm border-sky-200"
+                                ? "border-l-4 rounded-xs border-sky-200"
                                 : ""
                         }
                         onClick={() => {

@@ -152,7 +152,7 @@ const Checkout: React.FC<CheckoutProps> = (props: CheckoutProps) => {
                 <div className="mb-2">
                     <a
                         href="#"
-                        className="focus:outline-none hover:underline text-gray-500 text-sm"
+                        className="focus:outline-hidden hover:underline text-gray-500 text-sm"
                     >
                         <i className="mdi mdi-arrow-left text-gray-400" />
                         Back
@@ -166,14 +166,14 @@ const Checkout: React.FC<CheckoutProps> = (props: CheckoutProps) => {
                 <div className="mb-5 text-gray-400">
                     <a
                         href="#"
-                        className="focus:outline-none hover:underline text-gray-500"
+                        className="focus:outline-hidden hover:underline text-gray-500"
                     >
                         Home
                     </a>{" "}
                     /{" "}
                     <a
                         href="/user/cart"
-                        className="focus:outline-none hover:underline text-gray-500"
+                        className="focus:outline-hidden hover:underline text-gray-500"
                     >
                         Cart
                     </a>{" "}
@@ -199,7 +199,7 @@ const Checkout: React.FC<CheckoutProps> = (props: CheckoutProps) => {
                                                     height={64}
                                                 />
                                             </div>
-                                            <div className="flex-grow pl-3 gap-2 justify-center items-center">
+                                            <div className="grow pl-3 gap-2 justify-center items-center">
                                                 <div className="flex justify-start items-center flex-row gap-2">
                                                     <h6 className="font-semibold uppercase text-gray-600">
                                                         {product.name}
@@ -245,7 +245,7 @@ const Checkout: React.FC<CheckoutProps> = (props: CheckoutProps) => {
 
                             <div className="p-4 border border-blue-500 rounded-md shadow-md">
                                 <table className="w-full text-left table-auto border-separate">
-                                    <thead className="border border-b-blue-500 w-full shadow-sm">
+                                    <thead className="border border-b-blue-500 w-full shadow-xs">
                                         <th>Title</th>
                                         <th>Discount</th>
                                         <th className="hidden md:block">
@@ -309,13 +309,13 @@ const Checkout: React.FC<CheckoutProps> = (props: CheckoutProps) => {
                             )}
                             <div className="mb-6 pb-6 border-b border-gray-200">
                                 <div className="-mx-2 flex items-end justify-end">
-                                    <div className="flex-grow px-2 lg:max-w-xs">
+                                    <div className="grow px-2 lg:max-w-xs">
                                         <label className="text-gray-600 font-semibold text-sm mb-2 ml-1">
                                             Discount code
                                         </label>
                                         <div>
                                             <input
-                                                className="w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors"
+                                                className="w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-hidden focus:border-indigo-500 transition-colors"
                                                 placeholder="XXXXXX"
                                                 type="text"
                                                 value={couponCode}
@@ -349,7 +349,7 @@ const Checkout: React.FC<CheckoutProps> = (props: CheckoutProps) => {
                             </div>
                             <div className="mb-6 pb-6 border-b border-gray-200 text-gray-800">
                                 <div className="w-full flex mb-3 items-center">
-                                    <div className="flex-grow">
+                                    <div className="grow">
                                         <span className="text-gray-600">
                                             Subtotal
                                         </span>
@@ -361,7 +361,7 @@ const Checkout: React.FC<CheckoutProps> = (props: CheckoutProps) => {
                                     </div>
                                 </div>
                                 <div className="w-full flex items-center">
-                                    <div className="flex-grow">
+                                    <div className="grow">
                                         <span className="text-gray-600">
                                             Taxes (GST)
                                         </span>
@@ -375,7 +375,7 @@ const Checkout: React.FC<CheckoutProps> = (props: CheckoutProps) => {
 
                                 {couponValid && discount !== 0 && (
                                     <div className="w-full flex items-center">
-                                        <div className="flex-grow">
+                                        <div className="grow">
                                             <span className="text-gray-600">
                                                 Discount
                                             </span>
@@ -390,7 +390,7 @@ const Checkout: React.FC<CheckoutProps> = (props: CheckoutProps) => {
                             </div>
                             <div className="mb-6 pb-6 border-b border-gray-200 md:border-none text-gray-800 text-xl">
                                 <div className="w-full flex items-center">
-                                    <div className="flex-grow">
+                                    <div className="grow">
                                         <span className="text-gray-600">
                                             Total
                                         </span>
@@ -419,7 +419,7 @@ const Checkout: React.FC<CheckoutProps> = (props: CheckoutProps) => {
                                             Contact
                                         </span>
                                     </div>
-                                    <div className="flex-grow pl-3">
+                                    <div className="grow pl-3">
                                         <span>Archit Rathod</span>
                                     </div>
                                 </div>
@@ -429,7 +429,7 @@ const Checkout: React.FC<CheckoutProps> = (props: CheckoutProps) => {
                                             Billing Address
                                         </span>
                                     </div>
-                                    <div className="flex-grow pl-3">
+                                    <div className="grow pl-3">
                                         <span>
                                             123, ABC Street, XYZ City, 123456
                                         </span>
@@ -468,7 +468,7 @@ const Checkout: React.FC<CheckoutProps> = (props: CheckoutProps) => {
                                             </label>
                                             <div>
                                                 <input
-                                                    className="w-full px-3 py-2 mb-1 border border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors"
+                                                    className="w-full px-3 py-2 mb-1 border border-gray-200 rounded-md focus:outline-hidden focus:border-indigo-500 transition-colors"
                                                     placeholder="John Smith"
                                                     type="text"
                                                 />
@@ -480,7 +480,7 @@ const Checkout: React.FC<CheckoutProps> = (props: CheckoutProps) => {
                                             </label>
                                             <div>
                                                 <input
-                                                    className="w-full px-3 py-2 mb-1 border border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors"
+                                                    className="w-full px-3 py-2 mb-1 border border-gray-200 rounded-md focus:outline-hidden focus:border-indigo-500 transition-colors"
                                                     placeholder="0000 0000 0000 0000"
                                                     type="text"
                                                 />
@@ -492,7 +492,7 @@ const Checkout: React.FC<CheckoutProps> = (props: CheckoutProps) => {
                                                     Expiration date
                                                 </label>
                                                 <div>
-                                                    <select className="form-select w-full px-3 py-2 mb-1 border border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors cursor-pointer">
+                                                    <select className="form-select w-full px-3 py-2 mb-1 border border-gray-200 rounded-md focus:outline-hidden focus:border-indigo-500 transition-colors cursor-pointer">
                                                         <option value={"01"}>
                                                             01 - January
                                                         </option>
@@ -533,7 +533,7 @@ const Checkout: React.FC<CheckoutProps> = (props: CheckoutProps) => {
                                                 </div>
                                             </div>
                                             <div className="px-2 w-1/4">
-                                                <select className="form-select w-full px-3 py-2 mb-1 border border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors cursor-pointer">
+                                                <select className="form-select w-full px-3 py-2 mb-1 border border-gray-200 rounded-md focus:outline-hidden focus:border-indigo-500 transition-colors cursor-pointer">
                                                     <option value={2020}>
                                                         2020
                                                     </option>
@@ -572,7 +572,7 @@ const Checkout: React.FC<CheckoutProps> = (props: CheckoutProps) => {
                                                 </label>
                                                 <div>
                                                     <input
-                                                        className="w-full px-3 py-2 mb-1 border border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors"
+                                                        className="w-full px-3 py-2 mb-1 border border-gray-200 rounded-md focus:outline-hidden focus:border-indigo-500 transition-colors"
                                                         placeholder={"000"}
                                                         type="text"
                                                     />

@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Navbar as Nav } from "flowbite-react";
+import { Navbar as Nav, NavbarBrand } from "flowbite-react";
 import Image from "next/image";
 import Link from "next/link";
 import { signOut } from "next-auth/react";
@@ -86,16 +86,16 @@ const Navbar = ({}: Props) => {
                 className="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 w-full z-20 border-b border-gray-300 dark:border-gray-600"
             >
                 <div className="container flex flex-wrap items-center justify-between mx-auto">
-                    <Nav.Brand
+                    <NavbarBrand
                         href="/"
                         className="flex items-center cursor-pointer"
                     >
-                        <GiWallet className="h-8 w-8 mr-3 dark:bg-white dark:text-gray-900 rounded bg-gray-900 text-white" />
+                        <GiWallet className="h-8 w-8 mr-3 dark:bg-white dark:text-gray-900 rounded-sm bg-gray-900 text-white" />
 
                         <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
                             {name}
                         </span>
-                    </Nav.Brand>
+                    </NavbarBrand>
 
                     <div className="flex gap-2">
                         {/* Day - night toggler */}
@@ -118,7 +118,7 @@ const Navbar = ({}: Props) => {
                                     onClick={clickHandler}
                                     id="theme-toggle"
                                     type="button"
-                                    className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none rounded-lg text-sm p-2.5 md:float-right md:mr-4"
+                                    className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-hidden rounded-lg text-sm p-2.5 md:float-right md:mr-4"
                                 >
                                     <svg
                                         id="theme-toggle-dark-icon"
@@ -133,7 +133,7 @@ const Navbar = ({}: Props) => {
                                     </svg>
                                 </button>
                             )}
-                            {/* <Nav.Toggle className="" /> */}
+                            {/* <NavbarToggle className="" /> */}
                         </span>
                         <div className="">
                             {true ? (

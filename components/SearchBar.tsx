@@ -15,8 +15,8 @@ const SearchBar = (props: Props) => {
   return (
     <div className="max-w-[1420px] mx-auto flex flex-col justify-center items-center p-4 mt-12">
       <section className="bg-white dark:bg-gray-900">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-          <div className="mx-auto max-w-screen-md sm:text-center">
+        <div className="py-8 px-4 mx-auto max-w-(--breakpoint-xl) lg:py-16 lg:px-6">
+          <div className="mx-auto max-w-(--breakpoint-md) sm:text-center">
             <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">
               Find What You&apos;re Looking For
             </h2>
@@ -25,7 +25,7 @@ const SearchBar = (props: Props) => {
               topics to find exactly what you&apos;re looking for.
             </p>
             <form onSubmit={handleClick}>
-              <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+              <div className="items-center mx-auto mb-3 space-y-4 max-w-(--breakpoint-sm) sm:flex sm:space-y-0">
                 <div className="relative w-full">
                   <label
                     htmlFor="email"

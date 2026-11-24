@@ -4,9 +4,9 @@ import { getProviders } from "next-auth/react";
 import Navbar from "components/Navbar";
 import Script from "next/script";
 import Footer from "components/Footer";
-// import { Roboto } from "@next/font/google";
+// import { Roboto } from "next/font/google";
 import { name } from "../../staticProducts";
-import Providers from "components/Providers";
+import Providers from "components/providers";
 
 // const roboto = Roboto({
 //   subsets: ["latin"],

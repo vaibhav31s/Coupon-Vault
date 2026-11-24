@@ -83,7 +83,7 @@ export default function Register() {
               id="email"
               autoComplete="email"
               required
-              className="peer relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 invalid:text-pink-600 focus:z-10 focus:border-indigo-500 focus:outline-none  focus:ring-indigo-500 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 sm:text-sm"
+              className="peer relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 invalid:text-pink-600 focus:z-10 focus:border-indigo-500 focus:outline-hidden  focus:ring-indigo-500 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 sm:text-sm"
               value={email}
               onChange={(e) => {
                 setEmail(e.target.value);
@@ -105,7 +105,7 @@ export default function Register() {
               name="password"
               min="50"
               max="250"
-              className="w-full bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-white rounded-sm border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-base outline-hidden text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
@@ -120,14 +120,14 @@ export default function Register() {
               name="phone"
               pattern="^([+]?\d{1,2}[.-\s]?)?(\d{3}[.-]?){2}\d{4}$"
               required
-              className="w-full bg-white rounded border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-white rounded-sm border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-base outline-hidden text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
             />
           </div>
 
           <button
-            className="text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-orange-600 rounded text-lg"
+            className="text-white bg-blue-500 border-0 py-2 px-8 focus:outline-hidden hover:bg-orange-600 rounded-sm text-lg"
             onClick={handleSubmit}
           >
             Register

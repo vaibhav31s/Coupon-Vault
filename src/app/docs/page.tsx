@@ -7,7 +7,7 @@ const Docs = (props: Props) => {
     return <div className="p-16 space-y-5"></div>;
 };
 
-// export default Docs
+export default Docs
 
 // "use client";
 // import LoadingComponent from "components/Loading";

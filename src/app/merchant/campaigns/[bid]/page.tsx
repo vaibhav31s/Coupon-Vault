@@ -2,7 +2,8 @@ import React from "react";
 
 type Props = {};
 
-const CampaignsBid = ({ params }) => {
+const CampaignsBid = (props) => {
+    const params: any = React.use(props.params);
     const { bid } = params["bid"];
     return (
         <div>

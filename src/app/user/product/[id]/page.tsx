@@ -3,7 +3,8 @@ import React from "react";
 // import { useRouter } from "next/navigation";
 import { prods } from "../../../../../staticProducts";
 
-const page = ({ params }: any) => {
+const page = (props: any) => {
+    const params: any = React.use(props.params);
     const { id } = params["id"];
     console.log(id);
     // console.log(prods);
@@ -30,7 +31,7 @@ const page = ({ params }: any) => {
                             {product.name}
                         </h1>
                         <div className="flex mb-4">
-                            <a className="flex-grow text-black border-b-2 border-indigo-500 py-2 text-lg px-1">
+                            <a className="grow text-black border-b-2 border-indigo-500 py-2 text-lg px-1">
                                 Description
                             </a>
                         </div>
@@ -75,7 +76,7 @@ const page = ({ params }: any) => {
                             <span className="title-font font-medium text-2xl text-gray-900">
                                 $58.00
                             </span>
-                            <button className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
+                            <button className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-hidden hover:bg-indigo-600 rounded-sm">
                                 Button
                             </button>
                             <button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
@@ -94,7 +95,7 @@ const page = ({ params }: any) => {
                     </div>
                     <Image
                         alt="ecommerce"
-                        className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                        className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded-sm"
                         src={product.image.src}
                     />
                 </div>

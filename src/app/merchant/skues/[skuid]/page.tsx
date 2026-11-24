@@ -3,7 +3,8 @@ import { prods } from "../staticProducts";
 import Image from "next/image";
 type Props = {};
 
-const Sku = ({ params }) => {
+const Sku = (props) => {
+    const params: any = React.use(props.params);
     const id = params["skuid"] - 1;
 
     const sku = { ...prods[id] };

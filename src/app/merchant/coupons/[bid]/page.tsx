@@ -44,7 +44,8 @@ type params = {
     bid: string;
 };
 
-const CouponIdDetails = ({ params }: any) => {
+const CouponIdDetails = (props: any) => {
+    const params: any = React.use(props.params);
     const [mobile, setMobile] = useState("");
 
     const forms = useRef();
@@ -89,10 +90,10 @@ const CouponIdDetails = ({ params }: any) => {
         console.log("Run");
         emailjs
             .sendForm(
-                "service_xuw0qvq",
-                "template_v6r31lq",
+                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
                 forms.current,
-                "ofA0AhGQztY1881q-"
+                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string
             )
 
             .then(
@@ -202,9 +203,9 @@ const CouponIdDetails = ({ params }: any) => {
                         <input type="hidden" name="message" value={message} />
                         <input type="hidden" name="email" value={email} />
                         {/* <input type="text" hidden name="email" value={email} onChange={(e)=>
-                setEmail(e.target.value) } placeholder="Enter Email" className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none" /> */}
+                setEmail(e.target.value) } placeholder="Enter Email" className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-hidden" /> */}
                         <button
-                            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-sm"
                             type="submit"
                         >
                             Gift Coupon By Email
@@ -219,7 +220,7 @@ const CouponIdDetails = ({ params }: any) => {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-sm">
                             Gift Coupon By WhatsApp
                         </button>
                     </a>

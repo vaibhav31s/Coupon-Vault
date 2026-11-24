@@ -23,7 +23,7 @@ const page = (props: Props) => {
                                 >
                                     <Link
                                         href={`/user/product/${prod.id}`}
-                                        className="block relative h-48 rounded overflow-hidden"
+                                        className="block relative h-48 rounded-sm overflow-hidden"
                                     >
                                         <Image
                                             alt="ecommerce"
